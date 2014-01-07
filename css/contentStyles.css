@@ -1,0 +1,31 @@
+@CHARSET "UTF-8" ";
+
+body {
+	padding-top: 70px;
+}
+
+.jumbotron h2 {
+	border-bottom: 1px dotted #333;
+}
+
+.jumbotron h3 {
+	border-bottom: 1px solid #333;
+}
+
+.jumbotron img {
+	max-width: 100%;
+}
+
+.jumbotron dt {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	width: 20%;
+}
+
+.jumbotron dd {
+	text-align: left;
+	font-size: 18px;
+	width: 80%;
+}
+

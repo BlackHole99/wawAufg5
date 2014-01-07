@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>yaBox - Newsletter</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/myStyles.css" rel="stylesheet">
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<!-- Navbar-Bau -->
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="startseite.html">yaBox</a>
+			</div>
+			<!-- Navbar-Bau Ende -->
+
+			<!-- Navbar-Füllung -->
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="startseite.html">Startseite</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" data-hover="dropdown" data-delay="150">Produkte</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Fun</a></li>
+							<li><a href="#">Classic</a></li>
+							<li><a href="#">Enthusiast</a></li>
+						</ul></li>
+					<li class="dropdown active"><a href="#"
+						class="dropdown-toggle" data-toggle="dropdown"
+						data-hover="dropdown" data-delay="150">Unternehmen</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Philosophie</a></li>
+							<li><a href="#">Kontakt</a></li>
+							<li><a href="#">Impressum</a></li>
+							<li><a href="newsletter.html">Newsletter</a></li>
+						</ul></li>
+					<li><a href="#">Shop</a></li>
+				</ul>
+			</div>
+			<!-- Navbar-Füllung Ende -->
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="jumbotron row">
+
+			<h2>Newsletter</h2>
+
+			<form class="form-horizontal" role="form">
+
+				<div class="form-group">
+					<div class="col-xs-6 col-sm-3">
+						<input type="text" class="form-control" id="inputVorname"
+							placeholder="Vorname">
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<input type="text" class="form-control" id="inputNachname"
+							placeholder="Nachname">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-xs-12 col-sm-6">
+						<input type="text" class="form-control" id="inputStrasse"
+							placeholder="Straße">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-xs-6 col-sm-3">
+						<input type="number" class="form-control" id="inputPLZ"
+							placeholder="PLZ">
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<input type="text" class="form-control" id="inputStadt"
+							placeholder="Stadt">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-xs-12 col-sm-6">
+						<input type="email" class="form-control" id="inputEmail"
+							placeholder="E-Mail">
+					</div>
+				</div>
+
+				<div>
+					<label class="checkbox-inline"> <input type="checkbox"
+						id="inlineCheckbox1" value="option1"> Flyer
+					</label> <label class="checkbox-inline"> <input type="checkbox"
+						id="inlineCheckbox2" value="option2"> Katalog
+					</label> <label class="checkbox-inline"> <input type="checkbox"
+						id="inlineCheckbox3" value="option3"> Newsletter
+					</label>
+				</div>
+
+				<div class="form-group">
+					<div class="col-xs-12 col-sm-6">
+						<select class="form-control" id="choice">
+							<option value="0" class=placeholder selected="selected">Aufmerksam durch</option>
+							<option value="1">Internet</option>
+							<option value="2">TV</option>
+							<option value="3">Bekannte</option>
+						</select>
+					</div>
+				</div>
+				
+				<button type="submit" class="btn btn-default">Absenden</button>
+
+			</form>
+
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/dropdown_hover.js"></script>
+	<script src="../js/select_placeholder.js"></script>
+</body>
+</html>
