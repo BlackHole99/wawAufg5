@@ -12,15 +12,15 @@ class CMS {
 		$this->checkRequest ();
 		
 		$dbHost = "localhost";
-		$dbUser = "y.soethoff";
-		$dbPW = "hswawdb";
-		$dbname = "y_soethoff";
+		$dbUser = "***";
+		$dbPW = "***";
+		$dbname = "***";
 		
-		/*$con = mysql_connect ( $dbHost, $dbUser, $dbPW ) or die ( "Keine Verbindung zur Datenbank möglich!" );
-		$handle = mysql_select_db ( $dbname, $con ) or die ( "Konnte Datenbank nicht auswählen!" );*/
+		/*$con = mysql_connect ( $dbHost, $dbUser, $dbPW ) or die ( "Keine Verbindung zur Datenbank mï¿½glich!" );
+		$handle = mysql_select_db ( $dbname, $con ) or die ( "Konnte Datenbank nicht auswï¿½hlen!" );*/
 		
-		$this->db_connection = mysql_connect ( $dbHost, $dbUser, $dbPW ) or die ( "Keine Verbindung zur Datenbank möglich!" );
-		$this->db_handle = mysql_select_db ( $dbname, $this->db_connection ) or die ( "Konnte Datenbank nicht auswählen!" );
+		$this->db_connection = mysql_connect ( $dbHost, $dbUser, $dbPW ) or die ( "Keine Verbindung zur Datenbank mï¿½glich!" );
+		$this->db_handle = mysql_select_db ( $dbname, $this->db_connection ) or die ( "Konnte Datenbank nicht auswï¿½hlen!" );
 	}
 	public function __destruct() {
 		mysql_close ( $this->db_connection );
